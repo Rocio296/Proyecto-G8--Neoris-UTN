@@ -1,0 +1,151 @@
+h1 {
+    color: whitesmoke;
+    text-align: center;
+}
+
+h2 {
+    color:whitesmoke;
+    text-align: center;
+    
+}
+
+p {
+    color: whitesmoke;
+    text-align: center;
+    
+}
+
+* {
+    margin: 0px;
+    padding: 5px;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    font-family: 'Spartan', sans-serif; 
+}
+
+nav {
+    background-color: orange;
+    width: 100%;
+    height: 5rem;
+    
+}
+
+nav ul {
+    float: left;
+    display: flex;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 2rem;
+    line-height: 5rem;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li ul  {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+nav ul li ul li {
+    width: 95%;
+}
+
+nav ul li ul li a {
+    padding: 1rem 2rem;
+    line-height: unset;
+    white-space: nowrap;
+}
+
+nav ul li ul li a:hover {
+    background-color:gray ;
+}
+
+#vet-slider{
+    font-family: sans-serif;
+    margin: auto;
+    background-color: white;
+    max-width: 400px;
+    width: 90%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  #vet-slider > ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  #vet-slider > ul.slider{
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    height: 300px;
+  }
+  
+  
+  #vet-slider > ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  #vet-slider > ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  #vet-slider > ul.slider li:first-child {
+      opacity: 1; /*Mostramos el primer <li>*/
+  }
+  
+  #vet-slider > ul.slider li:target {
+      opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+  }
+  
+  #vet-slider > .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  #vet-slider > .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  #vet-slider > .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 90%;
+  }
+		
